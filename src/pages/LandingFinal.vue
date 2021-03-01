@@ -11,7 +11,9 @@
               >Tailwind CSS</span
             >
           </h1>
-          <h2 class="text-2xl font-bold sm:text-4xl md:text-5xl text-cyan-800">
+          <h2
+            class="text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl text-cyan-800"
+          >
             Schnell moderne Webseiten bauen
           </h2>
         </div>
@@ -21,12 +23,12 @@
             class="flex flex-col space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row"
           >
             <Input type="email" placeholder="Deine E-Mail-Adresse" />
-            <Button @click="loading = !loading" type="submit">
+            <Button class="" @click="loading = !loading" type="submit">
               <LoadingIcon
                 v-if="loading"
                 class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
               />
-              <span class="block">Jetzt anmelden!!1</span>
+              <span class="block">Jetzt&nbsp;anmelden!</span>
             </Button>
           </div>
         </form>
@@ -35,19 +37,18 @@
     <Container class="bg-gradient-to-b from-cyan-50 to-emerald-200">
       <main>
         <section class="space-y-16">
-          <div class="space-y-2">
-            <p
-              class="font-medium tracking-wide text-center uppercase text-emerald-800"
+          <h2 class="space-y-2">
+            <span
+              class="block font-medium tracking-wide text-center uppercase md:text-lg text-emerald-800"
             >
               Frisch aus der Presse
-            </p>
-            <h2
-              class="text-3xl font-semibold tracking-tight text-center text-emerald-900"
+            </span>
+            <span
+              class="block text-3xl font-semibold tracking-tight text-center md:text-4xl text-emerald-900"
+              >Blogposts</span
             >
-              Blogposts
-            </h2>
-          </div>
-          <div class="grid gap-4 sm:gap-8 sm:grid-cols-2">
+          </h2>
+          <div class="grid gap-4 md:gap-8 sm:grid-cols-2">
             <BlogCard />
             <BlogCard />
             <BlogCard />

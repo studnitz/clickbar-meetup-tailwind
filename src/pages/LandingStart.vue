@@ -16,9 +16,16 @@
     </header>
 
     <main>
-      <!-- Frisch aus der Presse -->
-      <!-- Blogposts Headline -->
+      <h2>
+        <span> Frisch aus der Presse </span>
+        <span>Blogposts</span>
+      </h2>
       <!-- Blogposts Grid -->
+      <!-- <div>
+        <BlogPostCard />
+        <BlogPostCard />
+        <BlogPostCard />
+      </div> -->
     </main>
 
     <footer>© 2021 Jemand aus dem Internet</footer>
@@ -26,8 +33,8 @@
 </template>
 
 <script setup>
+import BlogPostCard from "../components/BlogPostCard.vue"
 // import Container from "../components/Container.vue"
 // import Button from "../components/Button.vue"
 // import Input from "../components/Input.vue"
-// import BlogPostCard from "../components/BlogPostCard.vue"
 </script>
