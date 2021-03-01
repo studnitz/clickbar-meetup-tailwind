@@ -18,6 +18,7 @@ module.exports = {
     extend: {
       opacity: ["disabled"],
       cursor: ["disabled"],
+      boxShadow: ["disabled"],
       translate: ["active"],
     },
   },

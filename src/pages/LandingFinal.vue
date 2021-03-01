@@ -1,9 +1,11 @@
 <template>
-  <div class="flex-col min-h-screen mx-auto font-sans">
+  <div class="flex-col min-h-screen font-sans">
     <Container class="py-16 sm:py-12 bg-cyan-50">
       <header class="space-y-24">
         <div class="space-y-2">
-          <h1 class="text-5xl font-extrabold sm:text-7xl md:text-9xl">
+          <h1
+            class="text-5xl font-extrabold sm:text-7xl md:text-8xl lg:text-9xl"
+          >
             <span
               class="text-transparent bg-clip-text bg-gradient-to-tl from-emerald-400 to-cyan-900"
               >Tailwind CSS</span
@@ -13,32 +15,24 @@
             Schnell moderne Webseiten bauen
           </h2>
         </div>
-        <form @submit.prevent class="space-y-2">
-          <div class="text-gray-800">Jetzt für den Newsletter anmelden:</div>
+        <form @submit.prevent class="space-y-4">
+          <p class="text-gray-800">Jetzt für den Newsletter anmelden:</p>
           <div
             class="flex flex-col space-y-4 sm:space-y-0 sm:space-x-4 sm:flex-row"
           >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="block w-full max-w-sm placeholder-gray-500 rounded sm:text-lg text-cyan-900 focus:ring-cyan-700 focus:ring focus:ring-offset-1 focus:outline-none"
-              placeholder="Deine E-Mail-Adresse"
-            />
+            <Input type="email" placeholder="Deine E-Mail-Adresse" />
             <Button @click="loading = !loading" type="submit">
               <LoadingIcon
                 v-if="loading"
                 class="w-5 h-5 mr-3 -ml-1 text-white animate-spin"
               />
-              <span class="block">Jetzt anmelden!</span>
+              <span class="block">Jetzt anmelden!!1</span>
             </Button>
           </div>
         </form>
       </header>
     </Container>
-    <Container
-      class="bg-emerald-200 bg-gradient-to-b from-cyan-50 to-emerald-100"
-    >
+    <Container class="bg-gradient-to-b from-cyan-50 to-emerald-200">
       <main>
         <section class="space-y-16">
           <div class="space-y-2">
@@ -67,9 +61,10 @@
   </div>
 </template>
 <script setup>
-import BlogCard from "../components/BlogCardFinal.vue"
-import Container from "../components/ContainerFinal.vue"
-import Button from "../components/ButtonFinal.vue"
+import BlogCard from "../components/final/BlogCardFinal.vue"
+import Container from "../components/final/ContainerFinal.vue"
+import Button from "../components/final/ButtonFinal.vue"
+import Input from "../components/final/InputFinal.vue"
 import LoadingIcon from "../components/LoadingIcon.vue"
 
 ref: loading = false
