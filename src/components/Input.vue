@@ -1,5 +1,0 @@
-<template>
-  <input
-    class="block w-full max-w-sm placeholder-gray-500 transition rounded sm:text-lg focus:ring-cyan-700 focus:ring focus:ring-offset-2 focus:outline-none"
-  />
-</template>
